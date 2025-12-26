@@ -85,7 +85,7 @@ def main():
         shader.set_mat4("model",model)
         sphere.draw()
 
-        # Asteroid (pyramid)
+        # Random cosmic body / pyramid
         model=glm.translate(glm.mat4(1),glm.vec3(-4,1.5,0))
         model=glm.rotate(model,t*0.1,glm.vec3(0.5,1,0.2))
         model=glm.scale(model,glm.vec3(0.6))
